@@ -1,0 +1,106 @@
+<esc>         :noh<cr><esc>
+<c-t>         xph
+<a-\>         zR
+<c-a-\>       zM
+z             gS:vsc Edit.CommentSelection<cr>
+Z             gS:vsc Edit.UncommentSelection<cr>
+jj            <esc>
+Q             gq
+#i            oif ()<esc>i
+#bi           oif ()<esc>o{<esc>o}<esc>2k^f(a
+#e            oif ()<esc>oelse<esc>k^f)i
+#be           oif ()<esc>o{<esc>o}<esc>oelse<esc>o{<esc>o}<esc>5k^f(a
+#elf          oif ()<esc>o{<esc>o}<esc>oelse if ()<esc>o{<esc>o}<esc>5k^f(a
+#le           oif ()<esc>o{<esc>o}<esc>oelse if ()<esc>o{<esc>o}<esc>oelse {<cr>}<esc>7k^f(a
+#t            otry<cr>{<cr>}<esc>i
+#fct          otry<cr>{<cr>}<cr>catch (SystemException e)<cr>{<cr>}<cr>finally<cr>{<cr>}<esc>7k^o
+#ct           otry<cr>{<cr>}<cr>catch (SystemException e)<cr>{<cr>}<esc>
+#ft           otry<cr>{<cr>}<cr>finally<cr>{<cr>}<esc>
+#w            owhile ()<esc>i
+#bw           owhile ()<cr>{<cr>}<esc>2k^f)i
+#dw           odo <cr>{<cr>}<cr>while ()<esc>F)i
+#fe           oforeach ()<cr>{<cr>}<esc>2k^f)i
+vnri          viwyOif (<esc>pa == null)<esc>oreturn;<esc>
+vri           viwyOif (<esc>pa != null)<esc>oreturn;<esc>
+cl            0i//
+pd            i#define 
+pr            i#region 
+pe            i#endregion 
+nb            ibool
+n-b           iprivate bool
+n+b           ipublic bool
+ni            iint
+n-i           iprivate int
+n+i           ipublic int
+nf            ifloat
+n-f           iprivate float
+n+f           ipublic float
+ns            istring
+n-s           iprivate string
+n+s           ipublic string
+nd            idouble
+n-d           iprivate double
+n+d           ipublic double
+n-*s          iprivate const string 
+n-*i          iprivate const int 
+\m+           opublic void $$$ ()<cr>{<cr>};<esc>^%k^f$viw
+\m-           oprivate void $$$ ()<cr>{<cr>};<esc>^%k^f$viw
+\im-          oprivate int $$$ ()<cr>{<cr>};<esc>^%k^f$viw
+\im+          opublic int $$$ ()<cr>{<cr>};<esc>^%k^f$viw
+\fm-          oprivate float $$$ ()<cr>{<cr>};<esc>^%k^f$viw
+\fm+          opublic float $$$ ()<cr>{<cr>};<esc>^%k^f$viw
+\dm-          oprivate double $$$ ()<cr>{<cr>};<esc>^%k^f$viw
+\dm+          opublic double $$$ ()<cr>{<cr>};<esc>^%k^f$viw
+\sm-          oprivate string $$$ ()<cr>{<cr>};<esc>^%k^f$viw
+\sm+          opublic string $$$ ()<cr>{<cr>};<esc>^%k^f$viw
+nc+           opublic class $$$<cr>{<cr>};<esc>^%k^f$viw
+nc-           oprivate class $$$<cr>{<cr>};<esc>^%k^f$viw
+nc=           ointernal class $$$<cr>{<cr>};<esc>^%k^f$viw
+nc@           opublic abstract class $$$<cr>{<cr>};<esc>^%k^f$viw
+'r            ireturn;<esc>i 
+'0            i != 0
+'in           viwyOif (<esc>pa== null)<cr>    return;<esc>k^f=i
+'f            ofor (int i = 0; i < *; i++)<esc>F*xi
+'u            iusing 
+mp            `ayy}p`ao{<esc>p`ap`ao}<esc>^%k^f_bdt_x~wD^cwpublic<esc>jjf_bd^iget { return <esc>wwDa; }<esc>j^f_bd^iset { <esc>wwDa = value<esc>$a; }<esc>j^%k^Vj^%gqo<esc>
+'+            viwcpublic<esc>
+'-            viwcprivate<esc>
+'$            a static<esc>
+'td           O///TODO [slj]
+'nn           i = new 
+'ie           iif(true)<cr>{<cr>}<cr>else if (true)<cr>{<cr>}<esc>^%kk^%k^Vj^%jj^%gq
+'o            iobject obj
+'b            ibreak;
+'=n           i == null
+'g            iget<cr>{<cr>}<esc>
+'s            iset<cr>{<cr>}<esc>
+'ne           i != 
+'e            i == 
+'=n           i = null; 
+'=t           i = true; 
+'=f           i = false; 
+'nr           ireturn null;
+'tr           ireturn true;
+'nf           ireturn false;
+'nu           inull
+md            dd
+mns           p^iif ( <esc>$a != null)<esc>
+mes           o<esc>p<esc>^iforeach ( <esc>ldt<xf>xi item in<esc>wwC) <cr>{<cr>}<esc>%kwwwviw
+ei            `adOif (true)<esc>o{<cr>}<esc>kpa<esc>kkVj%gq%k^f)hviw
+ed            `adOdo<esc>o{<cr>}<esc>kpa<esc>k^%a while (true);<esc>^%k^Vj^%gq^f)hvi)
+ef            `adOfor ()<cr>{<cr>}<esc>kpa<esc>kk^f)iint i = 0; i < 10; i++<esc>Vj%gq%k^f)hvi)
+et            `aditry<cr>{<cr>}<esc>kpa<esc>k^k^Vj^%gq
+ect           `aditry<cr>{<cr>}<cr>catch (SystemException e)<cr>{<cr>}<esc>4kpa<esc>kk^Vj^%jj^%gq
+ebt           `aditry<cr>{<cr>}<cr>catch (SystemException e)<cr>{<cr>}<esc>4kpa<esc>k^%jj^%ofinally<cr>{<cr>}<esc>^%kk^%kk^%k^Vj^%jj^%jj^%gq
+ew            `adiwhile (true)<cr>{<cr>}<esc>kpa<esc>k^k^Vj^%gq^%k^f)hviw
+e(            `adO(<cr>)<esc>kpa<esc>kV%gq
+e{            `adO{<cr>}<esc>kpa<esc>kV%gq
+e[            `adO[<cr>]<esc>kpa<esc>kV%gq
+e"            `adi""<esc>hpa<esc>l
+er            `adi#region<cr>#endregion<esc>kpa<esc>
+e*            `adO/*<cr>/<esc>kpa<esc>kV%gq
+eo            di/*TODO [slj]<cr>*/<esc>kp
+
+
+
+

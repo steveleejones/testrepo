@@ -1,0 +1,32 @@
+Comments
+c
+
+Statements
+s
+si-------->if ()
+sie------->if (){} else {}
+sin------->if (%value == null)
+siin------>if (%VALUE% == null)return;
+sw-------->while () {}
+sf-------->for () {}
+sdo-------->do {}
+sdw-------->do {} while ()
+stt-------->try {}
+stc-------->try{}catch{}
+stf-------->try{}catch{}finaly{}
+Idioms
+i
+
+Preprocessor
+p
+pd-------->#define
+pi-------->#if #endif
+
+Snippets
+n
+
+C#
+#
+
+C+
++
